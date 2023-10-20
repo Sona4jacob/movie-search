@@ -1,0 +1,60 @@
+.container{
+    margin-top: 100px;
+}
+.container h2{
+    font-family: Rubik Wet Paint;
+    font-size: 47px;
+}
+#img1{
+    width: 380px;
+    margin-left: 1%;
+}
+.input{
+    margin-top: 2%;
+    width: 50%;
+    height: 38px;
+    border: none;
+    border-bottom: 2px solid grey;
+    
+    }
+    .input:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    input::placeholder{
+        font-family: cinzel;
+    }
+    button{
+        margin-top: 2%;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        font-family: CINZEL;
+    height: 45px; 
+    width: 20%;
+    border-radius:25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    button:hover{
+      transform: scale(1.05);
+    }
+    @media screen and (max-width:767px) {
+       
+        .container h2{
+            font-size: 20px;
+        }
+        .container{
+            margin-top: 8%;
+            width: 75%;
+            height: 50%;
+        }
+        #img1{
+            margin-left: 0;
+        }
+        button{
+            width: 70%;
+            margin-left: 13%;
+            margin-top: 5%;
+        }
+    
+    }
+    

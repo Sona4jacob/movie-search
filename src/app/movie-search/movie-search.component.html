@@ -1,0 +1,20 @@
+<div class="container text-center">
+    <h2 class="text-center">Movie Search</h2>
+    <img id="img1" class="img-fluid" src="https://i.postimg.cc/4NSXvj3d/movie-9pvmdtvz4cb0xl37.jpg" alt=""> <br>
+
+    <form (ngSubmit)="searchMovie()">
+      <input [(ngModel)]="movieName" class="input" placeholder="Enter movie name" name="movieName"><br>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+
+  <div class="container text-center" *ngIf="movie">
+    <h2 style="font-family: cinzel;">{{ movie.Title }}</h2>
+    <p>Released Date: {{ movie.Released }}</p>
+    <p>Actors:<span style="font-size: 25px;"> {{ movie.Actors }}</span></p>
+    <p>Plot: {{ movie.Plot }}</p>
+    <p>Ratings: {{ movie.Ratings[0].Value }}</p>
+    <img [src]="movie.Poster" alt="Movie Poster">
+  </div>
+  
